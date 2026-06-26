@@ -1,6 +1,5 @@
-import Sidebar from "../components/Sidebar";
-import StatCard from "../components/StatCard";
-
+import Sidebar from "../../components/layout/Sidebar";
+import StatCard from "../../components/dashboard/cards/StatCard";
 export default function DashboardPage() {
   return (
     <div className="dashboard-layout">

@@ -1,5 +1,5 @@
-function AIChatPage() {
+function ChatPage() {
   return <h1>AI Chat Page</h1>;
 }
 
-export default AIChatPage;
+export default ChatPage;
