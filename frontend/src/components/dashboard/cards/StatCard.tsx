@@ -1,3 +1,5 @@
+import Card from "../../ui/Card";
+
 type Props = {
   title: string;
   value: string;
@@ -5,9 +7,12 @@ type Props = {
 
 export default function StatCard({ title, value }: Props) {
   return (
-    <div className="card">
-      <h3>{title}</h3>
-      <h1>{value}</h1>
-    </div>
+    <Card className="stat-card">
+      <p className="stat-title">{title}</p>
+
+      <h2 className="stat-value">
+        {value}
+      </h2>
+    </Card>
   );
 }

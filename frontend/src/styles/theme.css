@@ -1,0 +1,29 @@
+:root {
+  /* Brand */
+  --primary: #7c3aed;
+  --primary-hover: #6d28d9;
+
+  /* Backgrounds */
+  --background: #0f172a;
+  --surface: #1e293b;
+  --surface-light: #334155;
+
+  /* Text */
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+
+  /* Borders */
+  --border: #334155;
+
+  /* Status */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* Radius */
+  --radius: 12px;
+
+  /* Shadow */
+  --shadow:
+    0 10px 30px rgba(0,0,0,.30);
+}
