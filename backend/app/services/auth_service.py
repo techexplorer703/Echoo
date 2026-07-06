@@ -2,7 +2,27 @@ from sqlalchemy.orm import Session
 
 from app.models.user import User
 from app.schemas.user import UserCreate
-from app.utils.hashing import hash_password
+from app.utils.hashing import hash_password, verify_password
+
+
+def login_user(db: Session, email: str, password: str):
+
+    user = (
+        db.query(User)
+        .filter(User.email == email)
+        .first()
+    )
+
+    if not user:
+        return None
+
+    if not verify_password(
+        password,
+        user.hashed_password
+    ):
+        return None
+
+    return user
 
 
 def register_user(db: Session, user: UserCreate):
